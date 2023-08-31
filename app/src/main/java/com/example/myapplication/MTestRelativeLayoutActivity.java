@@ -1,15 +1,12 @@
 package com.example.myapplication;
 
-import android.app.ActionBar;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MTVActivity2 extends AppCompatActivity {
+public class MTestRelativeLayoutActivity extends AppCompatActivity {
 
     TextView tvTop;
     TextView tvBottom;
@@ -19,18 +16,17 @@ public class MTVActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mtv2);
+        setContentView(R.layout.activity_test_relativelayout);
 
         tvTop = findViewById(R.id.tvTop);
-
         tvTop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
             }
         });
 
         tvBottom = findViewById(R.id.tvBottom);
-
         tvBottom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,7 +35,6 @@ public class MTVActivity2 extends AppCompatActivity {
         });
 
         tvLeft = findViewById(R.id.tvLeft);
-
         tvLeft.setOnClickListener(new View.OnClickListener() {
 
             @Override

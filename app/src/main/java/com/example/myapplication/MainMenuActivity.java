@@ -4,13 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainMenuActivity extends AppCompatActivity {
 
     TextView mTV1, mTV2, mTV3, mTV4;
 
@@ -20,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_menu);
 
         mTV1 = findViewById(R.id.mTV1);
         mTV2 = findViewById(R.id.mTV2);
@@ -33,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 MDebug.d_("mTV1 click!");
 
-                Intent _intent = new Intent(MainActivity.this, MTVActivity.class);
+                Intent _intent = new Intent(MainMenuActivity.this, MTestRecyclerViewLayoutActivity.class);
                 startActivity(_intent);
             }
         });
@@ -43,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 MDebug.d_("mTV2 click!");
 
-                Intent _intent = new Intent(MainActivity.this, MTVActivity2.class);
+                Intent _intent = new Intent(MainMenuActivity.this, MTestRelativeLayoutActivity.class);
                 startActivity(_intent);
             }
         });
@@ -52,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 MDebug.d_("mTV3 click!");
-                Intent _intent = new Intent(MainActivity.this, MTVActivity3.class);
+                Intent _intent = new Intent(MainMenuActivity.this, MTVActivity3.class);
                 startActivity(_intent);
             }
         });
@@ -61,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 MDebug.d_("mTV4 click!");
-                Intent _intent = new Intent(MainActivity.this, MTVActivity4.class);
+                Intent _intent = new Intent(MainMenuActivity.this, MTVActivity4.class);
                 startActivity(_intent);
             }
         });

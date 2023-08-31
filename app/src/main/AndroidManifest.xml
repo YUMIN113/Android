@@ -13,7 +13,7 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".MainMenuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,11 +22,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MTVActivity"
+            android:name=".MTestRecyclerViewLayoutActivity"
             android:exported="true">
         </activity>
         <activity
-            android:name=".MTVActivity2"
+            android:name=".MTestRelativeLayoutActivity"
             android:exported="true">
         </activity>
         <activity
