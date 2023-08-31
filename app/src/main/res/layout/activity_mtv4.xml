@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/light_pink">
+
+        <TextView
+            android:id="@+id/tvBtnTopRight"
+            android:layout_width="50dp"
+            android:background="@drawable/round_btn_default_1"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:textAppearance="@style/MTVButton"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00ff00">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_01"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/layout01"/>
+
+            <include layout="@layout/layout_02"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/layout02"/>
+
+            <include layout="@layout/layout_01"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/layout03"/>
+
+            <include layout="@layout/layout_02"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/layout04"/>
+
+            <include layout="@layout/layout_01"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/layout05"/>
+
+            <include layout="@layout/layout_02"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/layout06"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

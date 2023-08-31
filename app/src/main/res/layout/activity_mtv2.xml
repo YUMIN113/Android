@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige">
+
+    <TextView
+        android:id="@+id/mDummyTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="        "
+        android:paddingBottom="15dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/tvTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mDummyTV"
+        android:layout_centerInParent="true"
+        android:text="Top"
+        android:background="@drawable/select_btn_top"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/tvBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mDummyTV"
+        android:layout_centerInParent="true"
+        android:text="Bottom"
+        android:background="@drawable/select_btn_bottom"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/tvLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/mDummyTV"
+        android:layout_alignTop="@id/mDummyTV"
+        android:text="Left"
+        android:background="@drawable/select_btn_left"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/tvRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/mDummyTV"
+        android:layout_alignTop="@id/mDummyTV"
+        android:text="Right"
+        android:background="@drawable/select_btn_right"
+        android:textSize="25sp" />
+
+</RelativeLayout>
