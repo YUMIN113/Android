@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.myapplication.databinding.ActivityTestRecyclerviewlayoutBinding;
 import com.example.myapplication.str.MStudent;
 
 import java.util.ArrayList;
